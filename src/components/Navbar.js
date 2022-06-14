@@ -34,7 +34,7 @@ const Navbar = () => {
       <ul className="nav-links">
         {navlinks.map((item) => (
           <li className="nav-link" key={item.id}>
-            <NavLink to={item.path}>{item.text}</NavLink>
+            <NavLink to={item.path} className={({ isActive }) => (isActive ? 'active' : '')}>{item.text}</NavLink>
           </li>
         ))}
       </ul>
