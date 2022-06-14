@@ -1,5 +1,7 @@
 const Dragon = () => (
-  <div />
+  <div>
+    Dragons
+  </div>
 );
 
 export default Dragon;

@@ -1,5 +1,7 @@
 const Rocket = () => (
-  <div />
+  <div>
+    Rockets
+  </div>
 );
 
 export default Rocket;
