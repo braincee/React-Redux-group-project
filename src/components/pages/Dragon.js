@@ -1,6 +1,8 @@
+import Dragons from '../dragons/dragonsContainer';
+
 const Dragon = () => (
   <div>
-    Dragons
+    <Dragons />
   </div>
 );
 
