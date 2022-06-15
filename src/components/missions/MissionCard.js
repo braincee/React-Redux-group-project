@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import JoinMission from './JoinMission';
 
 const MissionCard = (props) => {
   const { mission } = props;
@@ -11,6 +12,12 @@ const MissionCard = (props) => {
       <th>
         <p>{mission.mission_description}</p>
       </th>
+      <th>
+        <JoinMission
+          isJoined={mission.isJoined}
+          id={mission.mission_id}
+        />
+      </th>
     </tr>
   );
 };
@@ -20,7 +27,6 @@ MissionCard.propTypes = {
     mission_id: PropTypes.string,
     mission_name: PropTypes.string,
     mission_description: PropTypes.string,
-    wikipedia: PropTypes.string,
     isJoined: PropTypes.bool,
   }).isRequired,
 };
