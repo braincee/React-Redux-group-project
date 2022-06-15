@@ -16,11 +16,11 @@ const Dragons = () => {
       <ul className="dragonsList">
         {dragonsList.map((dragon) => (
           <DragonElement
-            key={dragon.dry_mass_kg}
+            key={dragon.id}
             id={dragon.id}
             name={dragon.name}
             description={dragon.description}
-            flickrImages={dragon.flickr_images[0]}
+            flickrImages={dragon.image}
             reserved={dragon.reserved}
           />
         ))}
