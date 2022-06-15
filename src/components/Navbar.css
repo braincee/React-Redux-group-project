@@ -68,3 +68,7 @@ a {
   color: #222525;
   text-decoration: none;
 }
+
+.active {
+  border-bottom: 2px solid rgb(0, 0, 0);
+}

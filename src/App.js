@@ -11,8 +11,8 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="rocket" element={<Rocket />} exact />
-        <Route path="/missons" element={<Mission />} exact />
+        <Route path="/rocket" element={<Rocket />} exact />
+        <Route path="/missions" element={<Mission />} exact />
         <Route path="/dragons" element={<Dragon />} exact />
         <Route path="/profile" element={<MyProfile />} exact />
       </Routes>
