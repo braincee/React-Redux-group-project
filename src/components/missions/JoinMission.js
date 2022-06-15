@@ -9,9 +9,9 @@ const JoinMission = (props) => {
 
   const handleClick = () => {
     if (!isJoined) {
-      dispatch(leaveMission(id));
-    } else {
       dispatch(joinMission(id));
+    } else {
+      dispatch(leaveMission(id));
     }
   };
 
