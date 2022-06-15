@@ -1,7 +1,7 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Dragon from './components/dragons/Dragon';
+import Dragon from './components/pages/Dragon';
 import Mission from './components/pages/Mission';
 import MyProfile from './components/pages/MyProfile';
 import Rocket from './components/pages/Rocket';
