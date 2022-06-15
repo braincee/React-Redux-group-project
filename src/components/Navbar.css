@@ -22,7 +22,7 @@
   padding-left: 10px;
 }
 
-.nav-links {
+.links {
   display: flex;
   justify-content: flex-end;
   flex-grow: 1;
@@ -30,7 +30,7 @@
   gap: 1px;
 }
 
-.nav-link {
+.link {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
   color: #121212;
@@ -40,20 +40,6 @@
 .logo-image {
   height: 60px;
   width: 60px;
-}
-
-ul {
-  list-style: none;
-}
-
-li {
-  display: inline-block;
-  padding: 20px 0 20px;
-  vertical-align: middle;
-}
-
-.nav_bar ul li {
-  padding: 0;
 }
 
 a {

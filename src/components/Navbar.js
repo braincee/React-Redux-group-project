@@ -31,9 +31,9 @@ const Navbar = () => {
         <img className="logo-image" src={logoImage} alt="" />
         <h2 className="title">Space Travellers Hub</h2>
       </div>
-      <ul className="nav-links">
+      <ul className="links">
         {navlinks.map((item) => (
-          <li className="nav-link" key={item.id}>
+          <li className="link" key={item.id}>
             <NavLink to={item.path} className={({ isActive }) => (isActive ? 'active' : '')}>{item.text}</NavLink>
           </li>
         ))}
