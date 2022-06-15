@@ -3,17 +3,23 @@ import fetchDragons from './api';
 const FETCHDRAGONS = 'FETCHDRAGONS';
 const RESERVEDRAGON = 'RESERVEDRAGON';
 const UNRESERVEDRAGON = 'UNRESERVEDRAGON';
-const initialState = [];
 
-let store = false;
 export const getDragons = () => async (dispatch) => {
   const newState = await fetchDragons();
-  if (store) return;
+  const dragons = [];
+  newState.forEach((dragon) => {
+    dragons.push({
+      id: dragon.id,
+      name: dragon.name,
+      description: dragon.description,
+      image: dragon.flickr_images[0],
+      reserved: false,
+    });
+  });
   dispatch({
     type: FETCHDRAGONS,
-    newState,
+    dragons,
   });
-  store = true;
 };
 
 export const reserveDragon = (id) => ({
@@ -26,10 +32,10 @@ export const unreserveDragon = (id) => ({
   id,
 });
 
-const reducer = (state = initialState, action) => {
+const dragonReducer = (state = [], action) => {
   switch (action.type) {
     case FETCHDRAGONS:
-      return action.newState;
+      return action.dragons;
     case RESERVEDRAGON: {
       const valState = state.map((dragon) => {
         if (dragon.id !== action.id) {
@@ -53,4 +59,4 @@ const reducer = (state = initialState, action) => {
   }
 };
 
-export default reducer;
+export default dragonReducer;
