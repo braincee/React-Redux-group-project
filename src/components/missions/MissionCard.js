@@ -1,9 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Badge from 'react-bootstrap/Badge';
 import JoinMission from './JoinMission';
 
 const MissionCard = (props) => {
   const { mission } = props;
+  const switchBadge = () => {
+    if (mission.isJoined) {
+      return <Badge variant="success">Active Member</Badge>;
+    }
+    return <Badge variant="danger">Not A Member</Badge>;
+  };
+
   return (
     <tr>
       <th>
@@ -13,6 +21,7 @@ const MissionCard = (props) => {
         <p>{mission.mission_description}</p>
       </th>
       <th>
+        <th>{switchBadge()}</th>
         <JoinMission
           isJoined={mission.isJoined}
           id={mission.mission_id}
