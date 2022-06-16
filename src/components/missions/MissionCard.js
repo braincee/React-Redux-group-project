@@ -7,9 +7,9 @@ const MissionCard = (props) => {
   const { mission } = props;
   const switchBadge = () => {
     if (mission.isJoined) {
-      return <Badge variant="success">Active Member</Badge>;
+      return <Badge bg="info">Active Member</Badge>;
     }
-    return <Badge variant="danger">Not A Member</Badge>;
+    return <Badge bg="secondary">Not A Member</Badge>;
   };
 
   return (
@@ -20,9 +20,10 @@ const MissionCard = (props) => {
       <th>
         <p>{mission.mission_description}</p>
       </th>
+      <th className="align-middle">{switchBadge()}</th>
       <th>
-        <th>{switchBadge()}</th>
         <JoinMission
+          className="align-middle"
           isJoined={mission.isJoined}
           id={mission.mission_id}
         />

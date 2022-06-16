@@ -25,3 +25,19 @@ code {
     'Courier New',
     monospace;
 }
+
+.grid-display {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+}
+
+.joined {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.joined-1 {
+  width: auto;
+}
