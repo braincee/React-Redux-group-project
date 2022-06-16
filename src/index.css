@@ -26,14 +26,15 @@ code {
     monospace;
 }
 
-.grid-display {
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
+.profile-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .mission-profile {
   font-weight: 700;
-  margin-left: 100px;
+  margin-left: 6rem;
 }
 
 .joined li {
