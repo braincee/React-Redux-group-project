@@ -31,13 +31,21 @@ code {
   grid-template-columns: 30% 30% 30%;
 }
 
-.joined {
+.mission-profile {
+  font-weight: 700;
+  margin-left: 100px;
+}
+
+.joined li {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style-type: none;
+  gap: 30px;
+  border-bottom: 1px dotted burlywood;
 }
 
 .joined-1 {
   width: auto;
+}
+
+.joined-2 {
+  border-bottom: 1px solid rgb(170, 142, 142);
 }

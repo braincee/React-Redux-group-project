@@ -22,7 +22,8 @@ const JoinMission = (props) => {
       variant={isJoined ? 'outline-danger' : 'outline-primary'}
       onClick={handleClick}
     >
-      {isJoined ? 'Leave Mission' : 'Join Mission'}
+      { isJoined ? 'Leave' : 'Join' }
+      Mission
     </Button>
   );
 };

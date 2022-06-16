@@ -21,9 +21,8 @@ const MissionCard = (props) => {
         <p>{mission.mission_description}</p>
       </th>
       <th className="align-middle">{switchBadge()}</th>
-      <th>
+      <th className="align-middle">
         <JoinMission
-          className="align-middle"
           isJoined={mission.isJoined}
           id={mission.mission_id}
         />

@@ -20,8 +20,8 @@ const MissionProfiles = () => {
   };
   return (
     <div className="joined-1">
-      <h2 className="title">MY MISSIONS</h2>
-      <ul>
+      <h5 className="mission-profile">MY MISSIONS</h5>
+      <ul className="joined-2">
         <li>{displayJoinedMissions()}</li>
       </ul>
     </div>

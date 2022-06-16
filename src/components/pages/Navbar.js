@@ -29,7 +29,7 @@ const Navbar = () => {
     <nav className="nav_bar">
       <div className="logo">
         <img className="logo-image" src={logoImage} alt="" />
-        <h2 className="title">Space Travellers Hub</h2>
+        <h2 className="title">Space Travelers&apos; Hub</h2>
       </div>
       <ul className="links">
         {navlinks.map((item) => (
