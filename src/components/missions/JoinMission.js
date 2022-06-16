@@ -1,6 +1,7 @@
 import React from 'react';
 import { bool, string } from 'prop-types';
 import { useDispatch } from 'react-redux';
+import { Button } from 'react-bootstrap';
 import { joinMission, leaveMission } from '../../redux/missions/missions';
 
 const JoinMission = (props) => {
@@ -16,14 +17,13 @@ const JoinMission = (props) => {
   };
 
   return (
-    <button
+    <Button
       type="button"
-      variant={isJoined ? 'danger' : 'secondary'}
+      variant={isJoined ? 'outline-danger' : 'outline-primary'}
       onClick={handleClick}
     >
-      { isJoined ? 'Leave' : 'Join' }
-      Mission
-    </button>
+      {isJoined ? 'Leave Mission' : 'Join Mission'}
+    </Button>
   );
 };
 

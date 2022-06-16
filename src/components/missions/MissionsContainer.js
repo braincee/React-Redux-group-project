@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Table } from 'react-bootstrap';
 import { getMissions } from '../../redux/missions/missions';
 import MissionCard from './MissionCard';
@@ -12,7 +13,7 @@ const MissionsContainer = () => {
   }, [dispatch]);
 
   return (
-    <Table striped bordered hover>
+    <Table striped bordered>
       <thead>
         <tr>
           <th>Mission</th>
