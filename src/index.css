@@ -157,3 +157,30 @@ p {
     margin-right: 1%;
   }
 }
+
+.rockets {
+  margin-top: 2em;
+}
+.profile-lists {
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgb(148, 146, 146);
+  border-bottom: none;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  list-style: none;
+  padding: 10px 15px;
+  border-bottom: 1px solid rgb(148, 146, 146);
+}
+
+
+.list .name {
+  width: 32%;
+}
+
