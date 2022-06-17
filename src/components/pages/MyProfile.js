@@ -8,7 +8,7 @@ const MyProfile = () => (
     <MissionProfiles />
     <Profile />
     <RocketProfiles />
- </div>
+  </div>
 );
 
 export default MyProfile;

@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { useEffect } from 'react';
+
 import Navbar from './components/pages/Navbar';
 import Dragon from './components/pages/Dragon';
 import Mission from './components/pages/Mission';
