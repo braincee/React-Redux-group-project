@@ -1,6 +1,6 @@
-const FETCH_DATA = 'my-app/rockets/FETCH';
-const RESERVE_ROCKET = 'my-app/rockets/RESERVE';
-const CANCEL_BOOKING_ROCKET = 'my-app/rockets/CANCEL';
+const FETCH_DATA = 'my-app/rocket/FETCH';
+const RESERVE_ROCKET = 'my-app/rocket/RESERVE';
+const CANCEL_BOOKING_ROCKET = 'my-app/rocket/CANCEL';
 
 const initialState = [];
 
@@ -55,7 +55,6 @@ export const fetchAPI = () => async (dispatch) => {
     };
     return newArr.push(obj);
   });
-  // console.log('Wanted format', newArr);
   dispatch(fetchData(newArr));
 };
 
