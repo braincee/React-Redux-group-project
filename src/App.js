@@ -1,3 +1,4 @@
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
@@ -17,10 +18,10 @@ function App() {
     <div>
       <Navbar />
       <Routes>
-        <Route path="/rocket" element={<Rocket />} exact />
-        <Route path="/missions" element={<Mission />} exact />
-        <Route path="/dragons" element={<Dragon />} exact />
-        <Route path="/profile" element={<MyProfile />} exact />
+        <Route path="/" element={<Rocket />} />
+        <Route path="/missions" element={<Mission />} />
+        <Route path="/dragons" element={<Dragon />} />
+        <Route path="/profile" element={<MyProfile />} />
       </Routes>
     </div>
   );
