@@ -6,7 +6,7 @@ const Navbar = () => {
   const navlinks = [
     {
       id: 1,
-      path: '/rocket',
+      path: '/',
       text: 'Rockets',
     },
     {
