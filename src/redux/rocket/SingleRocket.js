@@ -16,9 +16,7 @@ const SingleRocket = ({
       nameOfClass = 'rocket-cancel-btn';
     }
   }
-  const reserved =(id) =>{
-    
-  }
+
   return (
     <div className="each-rocket">
       <div className="rocket-img">

@@ -1,13 +1,14 @@
 import { React, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchAPI } from '../../redux/rocket/Rocket';
+import { fetchAPI, reserve, cancel } from '../../redux/rocket/Rocket';
 import SingleRocket from '../../redux/rocket/SingleRocket';
 
 const Rocket = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchAPI());
-  }, []); 
+  }, []);
+  const list = useSelector((state) => state.rocket);
 
   const reserveRocket = (id) => (
     (list[id - 1].reserved && list[id - 1].reserved === 'true')
@@ -15,7 +16,6 @@ const Rocket = () => {
       : dispatch(reserve(list, id))
   );
 
-  const list = useSelector((state) => state.rocket);
   return (
     <>
       <ul>
