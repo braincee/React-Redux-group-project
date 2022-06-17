@@ -4,9 +4,8 @@ import Profile from '../dragons/profileDragon';
 
 const MyProfile = () => (
   <div className="grid-display">
-    <MissionProfiles />
-
     <Profile />
+    <MissionProfiles />
     
   </div>
 );
