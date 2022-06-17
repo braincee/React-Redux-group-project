@@ -8,7 +8,6 @@
 - User can join missions if they wish.
 - Users can book each rocket by clicking the reservation button or cancel the previously made booking.
 
-
 ## Built With
 
 - React JS with Redux
@@ -82,17 +81,17 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 - LinkedIn: [STEPHEN ANNOR](https://www.linkedin.com/in/stephen-annor/)
 - Twitter: [@annor0543](https://twitter.com/annor0543)
 
-👤 ** **
+👤 \*\* \*\*
 
 - GitHub: []()
 - Twitter: []()
 - LinkedIn: []()
 
-👤 ** **
+👤 **Nii Amanor Djoleto**
 
-- GitHub: []()
-- Twitter: []()
-- LinkedIn: [LinkedIn]()
+- GitHub: [@ramrod433](https://github.com/ramrod433)
+- Twitter: [@\_Djoleto](https://twitter.com/_djoleto_)
+- LinkedIn: [Nii Amanor Djoleto](https://linkedin.com/in/nii-amanor-djoleto)
 
 ## 🤝 Contributing
 

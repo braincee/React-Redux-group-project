@@ -1,16 +1,10 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { getDragons } from '../../redux/dragons/Dragons';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import DragonElement from './DragonElement';
 import './dragons.css';
 
 const Dragons = () => {
-  const dispatch = useDispatch();
-  const dragonsList = useSelector((store) => store.dragons);
-  useEffect(() => {
-    dispatch(getDragons());
-  }, []);
-
+  const dragonsList = useSelector((newState) => newState.dragons);
   return (
     <section>
       <ul className="dragonsList">
