@@ -1,3 +1,4 @@
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 import logoImage from './SpaceLogo.png';
@@ -6,7 +7,7 @@ const Navbar = () => {
   const navlinks = [
     {
       id: 1,
-      path: '/rocket',
+      path: '/',
       text: 'Rockets',
     },
     {

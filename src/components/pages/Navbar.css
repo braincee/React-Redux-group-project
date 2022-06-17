@@ -70,14 +70,8 @@ a {
 }
 
 .active {
-  background-color: #1f8bd3;
+  background-color: #3e88b9;
   text-decoration: none;
   color: aliceblue;
   border-radius: 5px;
 }
-
-/* a:hover,
-a:active {
-  color: #121212;
-  border-bottom: #121212;
-} */
