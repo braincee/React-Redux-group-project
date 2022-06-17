@@ -1,13 +1,12 @@
-import { React, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchAPI, reserve, cancel } from '../../redux/rocket/Rocket';
+import { reserve, cancel } from '../../redux/rocket/Rocket';
 import SingleRocket from '../../redux/rocket/SingleRocket';
 
 const Rocket = () => {
   const dispatch = useDispatch();
-  /*useEffect(() => {
+  /* useEffect(() => {
     dispatch(fetchAPI());
-  }, []);*/
+  }, []); */
   const list = useSelector((state) => state.rocket);
 
   const reserveRocket = (id) => (

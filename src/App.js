@@ -1,13 +1,12 @@
 import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 import Navbar from './components/pages/Navbar';
 import Dragon from './components/pages/Dragon';
 import Mission from './components/pages/Mission';
 import MyProfile from './components/pages/MyProfile';
 import Rocket from './components/pages/Rocket';
-import {fetchAPI} from './redux/rocket/Rocket';
-import { useDispatch } from 'react-redux';
-
+import { fetchAPI } from './redux/rocket/Rocket';
 
 function App() {
   const dispatch = useDispatch();
