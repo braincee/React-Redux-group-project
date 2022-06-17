@@ -1,3 +1,4 @@
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/pages/Navbar';
 import Dragon from './components/pages/Dragon';
