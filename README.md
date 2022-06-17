@@ -81,10 +81,10 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 - LinkedIn: [STEPHEN ANNOR](https://www.linkedin.com/in/stephen-annor/)
 - Twitter: [@annor0543](https://twitter.com/annor0543)
 
-👤 \*\* \*\*
+👤 **Aladdin Alsalem**
 
-- GitHub: []()
-- Twitter: []()
+- GitHub: [AlaaAlsalem](https://github.com/AlaaAlsalem)
+- Twitter: [Aladdin Alsalem](https://www.linkedin.com/in/aladdin-alsalem/)
 - LinkedIn: []()
 
 👤 **Nii Amanor Djoleto**
