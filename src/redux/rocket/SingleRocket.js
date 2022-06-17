@@ -25,7 +25,7 @@ const SingleRocket = ({
       <div className="rocket-details">
         <h2>{name}</h2>
         <div>
-        <p>
+          <p>
             {(rocket.reserved && rocket.reserved === 'true') ? (<span className="reserve-status">Reserved</span>) : null}
             {description}
           </p>

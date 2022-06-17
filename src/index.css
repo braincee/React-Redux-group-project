@@ -161,6 +161,7 @@ p {
 .rockets {
   margin-top: 2em;
 }
+
 .profile-lists {
   margin: 0;
   padding: 0;
@@ -179,8 +180,6 @@ p {
   border-bottom: 1px solid rgb(148, 146, 146);
 }
 
-
 .list .name {
   width: 32%;
 }
-

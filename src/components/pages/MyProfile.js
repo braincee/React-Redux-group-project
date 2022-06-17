@@ -4,7 +4,7 @@ import RocketProfiles from '../rocket/RocketProfiles';
 const MyProfile = () => (
   <div className="grid-display">
     <MissionProfiles />
-    <RocketProfiles/>
+    <RocketProfiles />
   </div>
 );
 
