@@ -5,9 +5,9 @@ import SingleRocket from '../../redux/rocket/SingleRocket';
 
 const Rocket = () => {
   const dispatch = useDispatch();
-  useEffect(() => {
+  /*useEffect(() => {
     dispatch(fetchAPI());
-  }, []);
+  }, []);*/
   const list = useSelector((state) => state.rocket);
 
   const reserveRocket = (id) => (

@@ -17,7 +17,6 @@ const RocketProfiles = () => {
       <ul className="profile-lists">
         {filteredRockets.map((reserved) => (
           <li key={reserved.id} className="list">
-
             <h3 className="name">{reserved.rocketName}</h3>
             <button type="submit" className="btn " onClick={() => leave(reserved.id)}>Cancel</button>
           </li>
