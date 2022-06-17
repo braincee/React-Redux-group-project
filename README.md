@@ -1,6 +1,40 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project Name : Space Travellers
+
+> The Space Travellers is a web application that provides commercial and scientific space travel services. This application will allow users to book rockets and join selected space missions :
+
+- User can go to My Profile that section displays all reserved rockets and space missions.
+- User can join missions if they wish.
+- Users can book each rocket by clicking the reservation button or cancel the previously made booking.
+
+## Built With
+
+- React JS with Redux
+- JSX
+- JavaScripts
+- Bootstrap
+- GitFlow
+
+## Live Demo (Link for Our Space Travellers Project)
+
+## Development set up
+
+Clone Repository using
+
+`git clone https://github.com/AlaaAlsalem/React-Redux-group-project.git`
+
+move into project directory
+
+`cd React-Redux-group-project`
+
+Install Project dependancies using `NPM`
+
+`npm install`
+
+launch project locally with
+
+`npm start`
 
 ## Available Scripts
 
@@ -39,32 +73,39 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Authors
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+👤 **Stephen Annor**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- GitHub: [braincee](https://github.com/braincee)
+- LinkedIn: [STEPHEN ANNOR](https://www.linkedin.com/in/stephen-annor/)
+- Twitter: [@annor0543](https://twitter.com/annor0543)
 
-### Code Splitting
+👤 **Aladdin Alsalem**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- GitHub: [AlaaAlsalem](https://github.com/AlaaAlsalem)
+- LinkedIn: [Aladdin Alsalem](https://www.linkedin.com/in/aladdin-alsalem/)
 
-### Analyzing the Bundle Size
+👤 **Nii Amanor Djoleto**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- GitHub: [@ramrod433](https://github.com/ramrod433)
+- Twitter: [@\_Djoleto](https://twitter.com/_djoleto_)
+- LinkedIn: [Nii Amanor Djoleto](https://linkedin.com/in/nii-amanor-djoleto)
 
-### Making a Progressive Web App
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contributions, issues, and feature requests are welcome!
 
-### Advanced Configuration
+Feel free to check the [issues page](../../issues/).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Show your support
 
-### Deployment
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Acknowledgments
 
-### `npm run build` fails to minify
+- Microverse team for guidance
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
