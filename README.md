@@ -84,8 +84,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 👤 **Aladdin Alsalem**
 
 - GitHub: [AlaaAlsalem](https://github.com/AlaaAlsalem)
-- Twitter: [Aladdin Alsalem](https://www.linkedin.com/in/aladdin-alsalem/)
-- LinkedIn: []()
+- LinkedIn: [Aladdin Alsalem](https://www.linkedin.com/in/aladdin-alsalem/)
 
 👤 **Nii Amanor Djoleto**
 
