@@ -1,17 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './dragon-profile.css';
-import { useSelector, useDispatch } from 'react-redux';
-import { getDragons } from '../../redux/dragons/Dragons';
+import { useSelector } from 'react-redux';
 import JoinButton from './joinButton';
 
 const Profile = () => {
-  const dispatch = useDispatch();
-  const dragonsList = useSelector((store) => store.dragons);
+  const dragonsList = useSelector((newState) => newState.dragons);
   const myDragons = dragonsList.filter((dragon) => dragon.reserved === true);
-  useEffect(() => {
-    dispatch(getDragons());
-  }, []);
-
   return (
     <section className="profile">
       <div className="profDragons">
