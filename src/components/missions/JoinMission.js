@@ -23,6 +23,8 @@ const JoinMission = (props) => {
       onClick={handleClick}
     >
       { isJoined ? 'Leave' : 'Join' }
+      {' '}
+      {' '}
       Mission
     </Button>
   );
