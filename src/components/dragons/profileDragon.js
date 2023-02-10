@@ -9,11 +9,11 @@ const Profile = () => {
   return (
     <section className="profile">
       <div className="profDragons">
-        <h2>My Dragons</h2>
+        <h2>MY DRAGONS</h2>
         <ul className="my">
           {myDragons.map((dragon) => (
             <div className="MyReserved" key={dragon.id}>
-              <h3>{dragon.name}</h3>
+              <h6>{dragon.name}</h6>
               <JoinButton dragon={dragon} />
             </div>
           ))}

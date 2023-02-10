@@ -1,6 +1,5 @@
 .dragonsList {
   margin: 40px;
-  border-top: solid #888 1px;
   padding: 0;
 }
 
@@ -42,4 +41,16 @@
   color: #888;
   border: solid #777 1px;
   border-radius: 5px;
+}
+
+@media (max-width: 460px) {
+  .dragonEl {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+  }
+
+  .dragon {
+    margin-top: 150px;
+  }
 }

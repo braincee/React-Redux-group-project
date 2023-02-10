@@ -8,22 +8,18 @@ const MissionProfiles = () => {
   const displayJoinedMissions = () => {
     if (joinedMissions.length > 0) {
       return joinedMissions.map((mission) => (
-        <ul key={mission.mission_id} className="joined">
-          <li>
-            <h5>{ mission.mission_name }</h5>
-            <JoinMission isJoined={mission.isJoined} id={mission.mission_id} />
-          </li>
-        </ul>
+        <div key={mission.mission_id} className="joined-3">
+          <h6>{ mission.mission_name }</h6>
+          <JoinMission isJoined={mission.isJoined} id={mission.mission_id} />
+        </div>
       ));
     }
     return <p>No missions joined</p>;
   };
   return (
     <div className="joined-1">
-      <h5 className="mission-profile">MY MISSIONS</h5>
-      <ul className="joined-2">
-        <li>{displayJoinedMissions()}</li>
-      </ul>
+      <h2>MY MISSIONS</h2>
+      <div className="joined-2">{displayJoinedMissions()}</div>
     </div>
   );
 };

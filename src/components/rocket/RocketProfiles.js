@@ -13,17 +13,17 @@ const RocketProfiles = () => {
   return (
 
     <div className="rockets">
-      <h2>My Rockets</h2>
+      <h2>MY ROCKETS</h2>
       <ul className="profile-lists">
         {filteredRockets.map((reserved) => (
           <li key={reserved.id} className="list">
-            <h3 className="name">{reserved.rocketName}</h3>
-            <button type="submit" className="btn " onClick={() => leave(reserved.id)}>Cancel</button>
+            <p className="name">{reserved.rocketName}</p>
+            <button type="submit" className="btn btn-outline-danger text" onClick={() => leave(reserved.id)}>Cancel Reservation</button>
           </li>
         ))}
       </ul>
       {(!filteredRockets.length >= 1)
-        ? <h3 className="no-mission">Please Reserve a Rocket </h3>
+        ? <p className="no-mission">Please Reserve a Rocket </p>
         : null}
     </div>
 
