@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.css';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { RiCloseCircleLine } from 'react-icons/ri';
 import logoImage from './SpaceLogo.png';
 
 const Navbar = () => {
@@ -26,6 +28,13 @@ const Navbar = () => {
       text: 'My profile',
     },
   ];
+
+  const [nav, setNav] = useState(true);
+
+  const handleNav = () => {
+    setNav(!nav);
+  };
+
   return (
     <nav className="nav_bar">
       <div className="logo">
@@ -39,6 +48,20 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
+      <div>
+        <div className="menu">
+          <GiHamburgerMenu size={40} onClick={handleNav} />
+        </div>
+        <div className={nav ? 'drawer' : 'drawer-1'}>
+          <div className="close"><RiCloseCircleLine size={60} onClick={handleNav} /></div>
+          <ul className="menu-links">
+            <li><NavLink to="/" onClick={() => setNav(true)}>Rockets</NavLink></li>
+            <li><NavLink to="/missions" onClick={() => setNav(true)}>Missions</NavLink></li>
+            <li><NavLink to="/dragons" onClick={() => setNav(true)}>Dragons</NavLink></li>
+            <li><NavLink to="/profile" onClick={() => setNav(true)}>My Profile</NavLink></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   );
 };
