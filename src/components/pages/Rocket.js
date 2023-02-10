@@ -4,9 +4,7 @@ import SingleRocket from '../../redux/rocket/SingleRocket';
 
 const Rocket = () => {
   const dispatch = useDispatch();
-  /* useEffect(() => {
-    dispatch(fetchAPI());
-  }, []); */
+
   const list = useSelector((state) => state.rocket);
 
   const reserveRocket = (id) => (
@@ -17,19 +15,21 @@ const Rocket = () => {
 
   return (
     <>
-      <ul>
-        {list.map((each) => (
-          <SingleRocket
-            key={each.id}
-            name={each.rocketName}
-            description={each.description}
-            image={each.flickrImages}
-            id={each.id}
-            reserve={reserveRocket}
-            rocket={each}
-          />
-        ))}
-      </ul>
+      <div className="falcon">
+        <ul className="falcon-list">
+          {list.map((each) => (
+            <SingleRocket
+              key={each.id}
+              name={each.rocketName}
+              description={each.description}
+              image={each.flickrImages}
+              id={each.id}
+              reserve={reserveRocket}
+              rocket={each}
+            />
+          ))}
+        </ul>
+      </div>
     </>
   );
 };
