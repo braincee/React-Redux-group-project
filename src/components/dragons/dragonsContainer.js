@@ -6,7 +6,7 @@ import './dragons.css';
 const Dragons = () => {
   const dragonsList = useSelector((newState) => newState.dragons);
   return (
-    <section>
+    <section className="dragon">
       <ul className="dragonsList">
         {dragonsList.map((dragon) => (
           <DragonElement
